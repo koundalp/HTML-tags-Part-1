@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+    <style>
+        body,
+        select {
+            background-color: rgb(0, 255, 175);
+        }
+        p{
+            text-decoration: underline;
+        }
+
+        h1,
+        h3 {
+            color: rgb(255, 100, 50);
+            text-decoration:underline; 
+        }
+
+        input,
+        button,
+        textarea {
+            background-color: rgb(100, 150, 175);
+            color: black;
+        }
+
+        table,
+        th,
+        td,
+        caption {
+            border: 2px black solid;
+            border-collapse: collapse;
+        }
+
+        td {
+            text-align: center;
+        }
+
+        fieldset {
+            display: inline-block;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <h1>HTML<sup>Hypertext Markup Language</sup> - Part 1</h1>
+        <p> HTML is exciting and easy to learn. Practice your way.</p>
+    </header>
+
+    <main>
+        <section>
+        <h2>HTML Tag types:</h2>
+        <table>
+            <caption>HTML Element types</caption>
+            <th>
+            <ul>
+                <li>Semantic Elements</li>
+                <li>Non-Semantic Elements</li>
+            </ul>
+        </th>
+        </table>
+        <h4>Using table and form elements, segregated Semantic and Non-semantic elements</h4>
+        <table>
+            <tr>
+                <th>
+                    Semantic
+                </th>
+                <th>
+                    Non-semantic
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <select>
+                        <option>&ltarticle&gt</option>
+                        <option>&ltAside&gt</option>
+                        <option>&ltdetials&gt</option>
+                        <option>&ltfigcaption&gt</option>
+                        <option>&ltfigure&gt</option>
+                        <option>&ltfooter&gt</option>
+                        <option>&ltheader&gt</option>
+                        <option>&ltmain&gt</option>
+                        <option>&ltmark&gt</option>
+                        <option>&ltnav&gt</option>
+                        <option>&ltsection&gt</option>
+                    </select>
+                </td>
+                <td>
+                    <select>
+                        <option>&ltdiv&gt</option>
+                        <option>&ltspan&gt</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+
+
+    </section>
+        <section>
+            <h3> Do not print anything </h3>
+            <p> Most frequestly used tags that do not print anything. We are going to use
+                ordered list tag. </p>
+            <ol>
+                <li> input, link </li>
+                <li> col, img </li>
+                <li> br, hr </li>
+                <li> i, b </li>
+            </ol>
+        </section>
+
+        <section>
+            <h3>HTML Formatting</h3>
+            <dl>
+                <dt>&lti&gt</dt>
+                <dd><i>Types like this.</i></dd>
+                <br>
+                <dt>&ltmark&gt</dt>
+                <dd><mark>Highlightes like this.</mark></dd>
+                <br>
+                <dt>&ltbold&gt</dt>
+                <dd><b>Makes it bold.</b></dd>
+                <br>
+                <dt>&ltdel&gt</dt>
+                <dd><del>Deletes like this</del></dd>
+                <br>
+                <dt>&ltsub&gt</dt>
+                <dd>Helps us write 2 in H<sub>2</sub>O</dd>
+                <br>
+                <dt>&ltsup&gt</dt>
+                <dd>Helps us write square values, like: a<sup>2</sup> + b<sup>2</sup></dd>
+                <br>
+                <dt>&ltstrong&gt</dt>
+                <dd><strong>Helps to mark something important by making it bold</strong></dd>
+                <br>
+                <dt>&ltem&gt</dt>
+                <dd><em>What does em do?Types like this.</em></dd>
+            </dl>
+
+        </section>
+
+        <section>
+            <h3>Table and forms</h3>
+            <p>In this section we will explore table tags and implement it with forms</p>
+            <table>
+                <thead>
+                    <tr>
+                        <caption><b>Exploring tags</b> <sub>created by &ltcaption&gt tag</sub></caption>
+                        <th> Name of tags </th>
+                        <th> Dropdown created using tags:
+                            <select>
+                                <option>&ltselect&gt</option>
+                                <option>&ltoption&gt</option>
+                            </select>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td> table </td>
+                        <td> table contains tags like:
+                            <select>
+                                <option>&lttable&gt</option>
+                                <option>&lttr&gt</option>
+                                <option>&ltth&gt</option>
+                                <option>&lttd&gt</option>
+                                <option>&ltcolgroup&gt</option>
+                                <option>&ltcol&gt</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            form
+                        </td>
+                        <td>
+                            form contains tags:
+                            <select>
+                                <option>&ltlabel&gt</option>
+                                <option>&ltinput&gt</option>
+                                <option>&ltbutton&gt</option>
+                                <option>&ltselect&gt</option>
+                                <option>&ltoption&gt</option>
+                                <option>&lttextarea&gt</option>
+                                <option>&ltlegend&gt</option>
+                                <option>&ltoptgroup&gt</option>
+                                <option>&ltoutput&gt</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Overall
+                        </td>
+                        <td>
+                            <select>
+                                <optgroup label="table tags">
+                                    <option>&lttable&gt</option>
+                                    <option>&lttr&gt</option>
+                                    <option>&ltth&gt</option>
+                                    <option>&lttd&gt</option>
+                                    <option>&ltcolgroup&gt</option>
+                                    <option>&ltcol&gt</option>
+                                </optgroup>
+                                <optgroup label="form tags">
+                                    <option>&ltlabel&gt</option>
+                                    <option>&ltinput&gt</option>
+                                    <option>&ltbutton&gt</option>
+                                    <option>&ltselect&gt</option>
+                                    <option>&ltoption&gt</option>
+                                    <option>&lttextarea&gt</option>
+                                    <option>&ltlegend&gt</option>
+                                    <option>&ltoptgroup&gt</option>
+                                    <option>&ltoutput&gt</option>
+                                </optgroup>
+                            </select>
+                        </td>
+                    </tr>
+                    <colgroup>
+                        <col span="1" style="background-color: rosybrown">
+                    </colgroup>
+                </tbody>
+            </table>
+            <br>
+            <label class="lbl"><b>Label tag created me: </b></label>
+            <input placeholder="Input tag created me">
+            <br>
+            <br>
+            <button>Button tag created me</button>
+            <br>
+            <br>
+            <textarea>textarea tag created me</textarea>
+            <hr>
+            <h3>fieldset creates tables like below:</h3>
+            <fieldset>
+                <legend>Information</legend>
+                Name:<input>
+                <br>
+                <br>
+                Email:<input>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Education</legend>
+                Highest degree:<input>
+                <br>
+                <br>
+                Speciality:<input>
+            </fieldset>
+            <br>
+            <tfoot>
+                <h3>Rate out of 100</h3>
+                
+                <form oninput="sum.value=parseInt(B.value);">
+                    <fieldset>
+                        <legend>Output element usage</legend>
+                        <label>Rating: </label>
+                    <input type="range" name="B" value="5"/>
+                    <br>
+                    Result:<output name="sum"></output>
+                    <br>
+                    <input type="submit"/>
+                </form>
+            </fieldset>
+            </tfoot>
+
+        </section>
+    </main>
+</body>
+
+</html>
